@@ -45,7 +45,7 @@ class ProductList extends \yii\db\ActiveRecord
     		'product_name'=>$this->product_name
 	    ]);
     	if(count($isExistBefore)){
-    		$this->addError($attribute, 'Exists, Not Going To Add');
+    		$this->addError($attribute, "Exists, Not Going To Add"+count($isExistBefore));
 	    }
     }
 
